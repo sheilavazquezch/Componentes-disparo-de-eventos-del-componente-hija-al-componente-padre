@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ejercicioDisparoEventos';
+  mensaje='';
+
+  actualizar(t: number) {
+    this.mensaje = t + '(se actualiza cada 10 segundos)';
+  }
 }
